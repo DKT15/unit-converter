@@ -4,26 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unit Converter</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/assets/index.css" />
   </head>
   <body>
-    <header>
-      <h1>Metric/Imperial Unit Conversion</h1>
-      <input type="number" />
-      <button>Convert</button>
-    </header>
-    <section>
-      <h3>Length (Meter/Feet)</h3>
-      <p id="length-para"></p>
-    </section>
-    <section>
-      <h3>Volume (Litres/Gallons)</h3>
-      <p id="volume-para"></p>
-    </section>
-    <section>
-      <h3>Mass (Kilograms/Pounds)</h3>
-      <p id="mass-para"></p>
-    </section>
-    <script src="index.js"></script>
+    <div class="container">
+      <div class="header-container">
+        <header class="header">
+          <h1>Metric/Imperial Unit Conversion</h1>
+          <div class="input-wrapper">
+            <input id="input-field" type="number" />
+          </div>
+          <div class="btn-wrapper">
+            <button id="convert-btn">Convert</button>
+          </div>
+        </header>
+      </div>
+      <div class="metrics-container">
+        <section class="metrics-section">
+          <div class="metric">
+            <h3>Length (Meter/Feet)</h3>
+            <p id="length-para"></p>
+          </div>
+          <div class="metric">
+            <h3>Volume (Litres/Gallons)</h3>
+            <p id="volume-para"></p>
+          </div>
+          <div class="metric">
+            <h3>Mass (Kilograms/Pounds)</h3>
+            <p id="mass-para"></p>
+          </div>
+        </section>
+      </div>
+      <script src="/assets/index.js"></script>
+    </div>
   </body>
 </html>
