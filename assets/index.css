@@ -73,10 +73,37 @@ p {
 
 /* MEDIA QUERIES START */
 
-@media only screen and (min-width: 1202px) and (max-width: 1475px) {}
+@media only screen and (min-width: 600px) and (max-width: 1201px) {
+    .header {
+        width: 80%;
+    }
 
-@media only screen and (min-width: 800px) and (max-width: 1201px) {}
+    .metrics-section {
+        width: 80%;
+    }
+}
 
-@media only screen and (min-width: 380px) and (max-width: 799px) {}
+@media only screen and (min-width: 380px) and (max-width: 600px) {
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .header {
+        width: 80%;
+        font-size: 10px;
+    }
+
+    #input-field {
+        font-size: 28px !important;
+    }
+
+    .metrics-section {
+        width: 80%;
+    }
+}
 
 /*MEDIA QUERIES END */
